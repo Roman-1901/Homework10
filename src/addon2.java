@@ -3,12 +3,7 @@ import java.util.Locale;
 
 public class addon2 {
     public static void main(String[] args) {
-        String fullName = "димонов            димон  димонович   ";
-        fullName = fullName.trim();
-        while (fullName.contains("  ")) {
-            String replace = fullName.replace("  ", " ");
-            fullName = replace;
-        }
+        String fullName = "димонов димон димонович";
         char[] fullNameArray = fullName.toCharArray();
         StringBuffer result = new StringBuffer();
         for (int i = 0; i < fullNameArray.length; i++) {
@@ -21,8 +16,6 @@ public class addon2 {
             result.append(fullNameArray[i]);
         }
         fullName = result.toString();
-
         System.out.print(fullName);
-
     }
 }
